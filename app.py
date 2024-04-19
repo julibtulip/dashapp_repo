@@ -12,7 +12,7 @@ from dash import dash_table
 import dash_bootstrap_components as dbc
 
 # import data
-data = pd.read_csv('./data/prep_data.csv')
+data = pd.read_csv('prep_data.csv')
 #data.tail()
 
 ##------------------ Creating graphs ----------------------
