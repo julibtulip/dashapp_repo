@@ -1,7 +1,5 @@
 ## Dashboard for weather API data  
 
-#  
-
 # import libraries
 import pandas as pd 
 import dash
@@ -80,18 +78,23 @@ server = app.server
 app.layout = html.Div([html.H1('Vacay Locater', style={'textAlign': 'center', 'color': '#636EFA'}), 
                        html.Div(html.P("Which location is best for hiking? Zermatt, Salzburg or Trondheim?"), 
                                  style={'textAlign': 'center', 'margin': '0 auto', 'width': '900px'}),
+
                        html.Div([html.Div('Average Temperature', 
                                  style={'textAlign': 'center', 'margin': '0 auto', 'width': '900px'}),
                                  graph1]),
+
                        html.Div([html.Div("August seems stable. Let's investigate further.", 
                                  style={'textAlign': 'center', 'margin': '0 auto', 'width': '900px'}),
+
                        html.Div("What about UV Radiation?", 
                                  style={'textAlign': 'center', 'margin': '0 auto', 'width': '900px'}),
                                  graph2
                                 ]),
+
                        html.Div([html.Div("What about rainfall?", 
                                  style={'textAlign': 'center', 'margin': '0 auto', 'width': '900px'}),
                                  graph3,
+
                        html.H2("Zermatt seems to be the best option!", 
                                  style={'textAlign': 'center', 'margin': '0 auto', 'width': '900px'}),                                
                                 ])
