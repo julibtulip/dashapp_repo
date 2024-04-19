@@ -3,7 +3,7 @@ gunicorn
 plotly == 5.20.0
 dash-tools
 pandas == 2.2.1
-dash_bootstrap_components
+dash_bootstrap_components == 1.6.0
 
 # if connected to dbeaver to access the data (prep_data table)
 # sqlalchemy == 2.0.29
